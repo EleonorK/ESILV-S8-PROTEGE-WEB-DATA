@@ -1,0 +1,812 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16"
+     xml:base="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-16="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#gYear -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#gYear"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#broadcast -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#broadcast">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#isPlayedIn"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Theater"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#MovieSchedule"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#hasActor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#hasActor">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#isActorOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Movie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Actor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#hasDirector -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#hasDirector">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#isDirectorOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Movie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Director"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#hasGenre -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#hasGenre">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#isGenreOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Movie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Genre"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#hasLocation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#hasLocation">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Theater"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#hasSchedule -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#hasSchedule">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Movie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#MovieSchedule"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#hasWriter -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#hasWriter">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#isWriterOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Movie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Writer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#isActorOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#isActorOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Movie"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#isDirectorOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#isDirectorOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Movie"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#isGenreOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#isGenreOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Genre"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Movie"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#isPlayedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#isPlayedIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#MovieSchedule"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Theater"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#isWriterOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#isWriterOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Movie"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Age -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Age">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Capacity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Capacity">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Theater"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Country -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Country">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Gender -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Gender">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Language -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Language">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Movie"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Location -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Location">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Theater"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Name">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Genre"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Person"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Theater"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Nationality -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Nationality">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Title -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Title">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Movie"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Year -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Year">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Movie"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#endDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#endDate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#MovieSchedule"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#startDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#startDate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#MovieSchedule"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Actor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Actor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Director -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Director">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Genre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Genre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Movie"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Movie -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Movie">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Person"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Theater"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#MovieSchedule -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#MovieSchedule"/>
+    
+
+
+    <!-- http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Person">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Age"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Gender"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Theater -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Theater"/>
+    
+
+
+    <!-- http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Writer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Writer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Action -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Action">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Genre"/>
+        <untitled-ontology-16:Name>Action</untitled-ontology-16:Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Avatar -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Avatar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Movie"/>
+        <untitled-ontology-16:hasGenre rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Action"/>
+        <untitled-ontology-16:hasSchedule rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#schedule_Avatar"/>
+        <untitled-ontology-16:Country>USA</untitled-ontology-16:Country>
+        <untitled-ontology-16:Language>English</untitled-ontology-16:Language>
+        <untitled-ontology-16:Title>Avatar</untitled-ontology-16:Title>
+        <untitled-ontology-16:Year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2009</untitled-ontology-16:Year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Black_Panther_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Black_Panther_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Movie"/>
+        <untitled-ontology-16:hasGenre rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Action"/>
+        <untitled-ontology-16:hasGenre rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Comedy"/>
+        <untitled-ontology-16:hasGenre rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Drama"/>
+        <untitled-ontology-16:hasSchedule rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#schedule_BP2"/>
+        <untitled-ontology-16:Country>USA</untitled-ontology-16:Country>
+        <untitled-ontology-16:Language>English</untitled-ontology-16:Language>
+        <untitled-ontology-16:Title>Black Panther: Wakanda Forever</untitled-ontology-16:Title>
+        <untitled-ontology-16:Year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2022</untitled-ontology-16:Year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#CGR_Nanterre -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#CGR_Nanterre">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Theater"/>
+        <untitled-ontology-16:Country>France</untitled-ontology-16:Country>
+        <untitled-ontology-16:Location>200 All. de Corse, 92000 Nanterre</untitled-ontology-16:Location>
+        <untitled-ontology-16:Name>CGR Nanterre</untitled-ontology-16:Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Christoph_Waltz -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Christoph_Waltz">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Person"/>
+        <untitled-ontology-16:isActorOf rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Spectre"/>
+        <untitled-ontology-16:Name>Christoph_Waltz</untitled-ontology-16:Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Comedy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Comedy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Genre"/>
+        <untitled-ontology-16:Name>Comedy</untitled-ontology-16:Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Crime -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Crime">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Genre"/>
+        <untitled-ontology-16:Name>Crime</untitled-ontology-16:Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Daniel_Craig -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Daniel_Craig">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Person"/>
+        <untitled-ontology-16:isActorOf rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Spectre"/>
+        <untitled-ontology-16:Name>Daniel_Craig</untitled-ontology-16:Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Drama -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Drama">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Genre"/>
+        <untitled-ontology-16:Name>Drama</untitled-ontology-16:Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#GAUMONT_CHAMPS_ELYSEES_MARIGNAN_Paris_8e_Arrondissement -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#GAUMONT_CHAMPS_ELYSEES_MARIGNAN_Paris_8e_Arrondissement">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Theater"/>
+        <untitled-ontology-16:Country>France</untitled-ontology-16:Country>
+        <untitled-ontology-16:Location>27/33 AVENUE DES CHAMPS ELYSEES</untitled-ontology-16:Location>
+        <untitled-ontology-16:Name>GAUMONT CHAMPS ELYSEES MARIGNAN_Paris 8e Arrondissement</untitled-ontology-16:Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#GRAND_REX_Paris_2e_Arrondissement -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#GRAND_REX_Paris_2e_Arrondissement">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Theater"/>
+        <untitled-ontology-16:Country>France</untitled-ontology-16:Country>
+        <untitled-ontology-16:Location>5 BD POISSONNIERE</untitled-ontology-16:Location>
+        <untitled-ontology-16:Name>GRAND REX_Paris 2e Arrondissement</untitled-ontology-16:Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#John_Travolta -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#John_Travolta">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Person"/>
+        <untitled-ontology-16:isActorOf rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Pulp_Fiction"/>
+        <untitled-ontology-16:Age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">59</untitled-ontology-16:Age>
+        <untitled-ontology-16:Gender>Male</untitled-ontology-16:Gender>
+        <untitled-ontology-16:Name>John Travolta</untitled-ontology-16:Name>
+        <untitled-ontology-16:Nationality>American</untitled-ontology-16:Nationality>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Johnny_Depp -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Johnny_Depp">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Person"/>
+        <untitled-ontology-16:isActorOf rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Pirates_of_the_Caribbean:_At_World&apos;s_End"/>
+        <untitled-ontology-16:Name>Johnny_Depp</untitled-ontology-16:Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Keira_Knightley -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Keira_Knightley">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Person"/>
+        <untitled-ontology-16:isActorOf rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Pirates_of_the_Caribbean:_At_World&apos;s_End"/>
+        <untitled-ontology-16:Name>Keira_Knightley</untitled-ontology-16:Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Kill_Bill_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Kill_Bill_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Movie"/>
+        <untitled-ontology-16:hasGenre rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Action"/>
+        <untitled-ontology-16:hasGenre rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Crime"/>
+        <untitled-ontology-16:hasGenre rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Thriller"/>
+        <untitled-ontology-16:hasSchedule rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#schedule_KB1"/>
+        <untitled-ontology-16:Country>USA</untitled-ontology-16:Country>
+        <untitled-ontology-16:Language>English</untitled-ontology-16:Language>
+        <untitled-ontology-16:Title>Kill Bill (volume 1)</untitled-ontology-16:Title>
+        <untitled-ontology-16:Year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2003</untitled-ontology-16:Year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Letitia_Wright -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Letitia_Wright">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Person"/>
+        <untitled-ontology-16:isActorOf rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Black_Panther_2"/>
+        <untitled-ontology-16:Age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">29</untitled-ontology-16:Age>
+        <untitled-ontology-16:Gender>Female</untitled-ontology-16:Gender>
+        <untitled-ontology-16:Name>Letitia Wright</untitled-ontology-16:Name>
+        <untitled-ontology-16:Nationality>British</untitled-ontology-16:Nationality>
+        <untitled-ontology-16:Nationality>Guyanese</untitled-ontology-16:Nationality>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Léa_Seydoux -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Léa_Seydoux">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Person"/>
+        <untitled-ontology-16:isActorOf rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Spectre"/>
+        <untitled-ontology-16:Name>Léa_Seydoux</untitled-ontology-16:Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Orlando_Bloom -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Orlando_Bloom">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Person"/>
+        <untitled-ontology-16:isActorOf rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Pirates_of_the_Caribbean:_At_World&apos;s_End"/>
+        <untitled-ontology-16:Name>Orlando_Bloom</untitled-ontology-16:Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Pathé_Conflans -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Pathé_Conflans">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Theater"/>
+        <untitled-ontology-16:broadcast rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#schedule_BP2"/>
+        <untitled-ontology-16:Capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">510</untitled-ontology-16:Capacity>
+        <untitled-ontology-16:Country>France</untitled-ontology-16:Country>
+        <untitled-ontology-16:Location>9 Rue de l&apos;Hautil, 78700 Conflans-Sainte-Honorine</untitled-ontology-16:Location>
+        <untitled-ontology-16:Name>Pathé Conflans</untitled-ontology-16:Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Pulp_Fiction -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Pulp_Fiction">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Movie"/>
+        <untitled-ontology-16:hasGenre rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Crime"/>
+        <untitled-ontology-16:hasGenre rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Thriller"/>
+        <untitled-ontology-16:hasSchedule rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#schedule_PF"/>
+        <untitled-ontology-16:Country>USA</untitled-ontology-16:Country>
+        <untitled-ontology-16:Language>English</untitled-ontology-16:Language>
+        <untitled-ontology-16:Title>Pulp Fiction</untitled-ontology-16:Title>
+        <untitled-ontology-16:Year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1994</untitled-ontology-16:Year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Quentin_Tarantino -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Quentin_Tarantino">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Person"/>
+        <untitled-ontology-16:isActorOf rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Pulp_Fiction"/>
+        <untitled-ontology-16:isDirectorOf rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Kill_Bill_1"/>
+        <untitled-ontology-16:isDirectorOf rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Pulp_Fiction"/>
+        <untitled-ontology-16:isWriterOf rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Kill_Bill_1"/>
+        <untitled-ontology-16:isWriterOf rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Pulp_Fiction"/>
+        <untitled-ontology-16:Age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">53</untitled-ontology-16:Age>
+        <untitled-ontology-16:Gender>Male</untitled-ontology-16:Gender>
+        <untitled-ontology-16:Name>Quentin Tarantino</untitled-ontology-16:Name>
+        <untitled-ontology-16:Nationality>American</untitled-ontology-16:Nationality>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Ryan_Coogler -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Ryan_Coogler">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Person"/>
+        <untitled-ontology-16:isDirectorOf rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Black_Panther_2"/>
+        <untitled-ontology-16:isWriterOf rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Black_Panther_2"/>
+        <untitled-ontology-16:Age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">36</untitled-ontology-16:Age>
+        <untitled-ontology-16:Gender>Male</untitled-ontology-16:Gender>
+        <untitled-ontology-16:Name>Ryan Coogler</untitled-ontology-16:Name>
+        <untitled-ontology-16:Nationality>American</untitled-ontology-16:Nationality>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Sam_Worthington -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Sam_Worthington">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Person"/>
+        <untitled-ontology-16:isActorOf rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Avatar"/>
+        <untitled-ontology-16:Name>Sam_Worthington</untitled-ontology-16:Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Sigourney_Weaver -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Sigourney_Weaver">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Person"/>
+        <untitled-ontology-16:isActorOf rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Avatar"/>
+        <untitled-ontology-16:Name>Sigourney_Weaver</untitled-ontology-16:Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Spectre -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Spectre">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Movie"/>
+        <untitled-ontology-16:hasGenre rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Action"/>
+        <untitled-ontology-16:hasSchedule rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#schedule_Spectre"/>
+        <untitled-ontology-16:Country>USA</untitled-ontology-16:Country>
+        <untitled-ontology-16:Language>English</untitled-ontology-16:Language>
+        <untitled-ontology-16:Title>Spectre</untitled-ontology-16:Title>
+        <untitled-ontology-16:Year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2015</untitled-ontology-16:Year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Thriller -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Thriller">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Genre"/>
+        <untitled-ontology-16:Name>Thriller</untitled-ontology-16:Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#UGC_MONTPARNASSE_Paris_6e_Arrondissement -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#UGC_MONTPARNASSE_Paris_6e_Arrondissement">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Theater"/>
+        <untitled-ontology-16:Country>France</untitled-ontology-16:Country>
+        <untitled-ontology-16:Location>83 BD DU MONTPARNASSE</untitled-ontology-16:Location>
+        <untitled-ontology-16:Name>UGC MONTPARNASSE_Paris 6e Arrondissement</untitled-ontology-16:Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Uma_Thurman -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Uma_Thurman">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Person"/>
+        <untitled-ontology-16:isActorOf rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Pulp_Fiction"/>
+        <untitled-ontology-16:isWriterOf rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Kill_Bill_1"/>
+        <untitled-ontology-16:Age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">43</untitled-ontology-16:Age>
+        <untitled-ontology-16:Gender>Female</untitled-ontology-16:Gender>
+        <untitled-ontology-16:Name>Uma Thurman</untitled-ontology-16:Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Zoe_Saldana -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Zoe_Saldana">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Person"/>
+        <untitled-ontology-16:isActorOf rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Avatar"/>
+        <untitled-ontology-16:Name>Zoe_Saldana</untitled-ontology-16:Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#schedule_Avatar -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#schedule_Avatar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#MovieSchedule"/>
+        <untitled-ontology-16:isPlayedIn rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#CGR_Nanterre"/>
+        <untitled-ontology-16:isPlayedIn rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#GAUMONT_CHAMPS_ELYSEES_MARIGNAN_Paris_8e_Arrondissement"/>
+        <untitled-ontology-16:endDate>2010-02-24</untitled-ontology-16:endDate>
+        <untitled-ontology-16:startDate>2009-12-10</untitled-ontology-16:startDate>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#schedule_BP2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#schedule_BP2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#MovieSchedule"/>
+        <untitled-ontology-16:isPlayedIn rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#CGR_Nanterre"/>
+        <untitled-ontology-16:endDate>2023-02-01</untitled-ontology-16:endDate>
+        <untitled-ontology-16:startDate>2022-11-09</untitled-ontology-16:startDate>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#schedule_KB1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#schedule_KB1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#MovieSchedule"/>
+        <untitled-ontology-16:isPlayedIn rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#CGR_Nanterre"/>
+        <untitled-ontology-16:endDate>2022-12-17</untitled-ontology-16:endDate>
+        <untitled-ontology-16:startDate>2022-12-15</untitled-ontology-16:startDate>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#schedule_PF -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#schedule_PF">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#MovieSchedule"/>
+        <untitled-ontology-16:isPlayedIn rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#CGR_Nanterre"/>
+        <untitled-ontology-16:endDate>2022-02-17</untitled-ontology-16:endDate>
+        <untitled-ontology-16:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-02-15</untitled-ontology-16:startDate>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#schedule_POTC -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#schedule_POTC">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#MovieSchedule"/>
+        <untitled-ontology-16:isPlayedIn rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#CGR_Nanterre"/>
+        <untitled-ontology-16:isPlayedIn rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#GAUMONT_CHAMPS_ELYSEES_MARIGNAN_Paris_8e_Arrondissement"/>
+        <untitled-ontology-16:endDate>2007-09-19</untitled-ontology-16:endDate>
+        <untitled-ontology-16:startDate>2007-05-19</untitled-ontology-16:startDate>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#schedule_Spectre -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#schedule_Spectre">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#MovieSchedule"/>
+        <untitled-ontology-16:isPlayedIn rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#GRAND_REX_Paris_2e_Arrondissement"/>
+        <untitled-ontology-16:isPlayedIn rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#UGC_MONTPARNASSE_Paris_6e_Arrondissement"/>
+        <untitled-ontology-16:endDate>2016-01-07</untitled-ontology-16:endDate>
+        <untitled-ontology-16:startDate>2015-10-26</untitled-ontology-16:startDate>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Pirates_of_the_Caribbean:_At_World&apos;s_End -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Pirates_of_the_Caribbean:_At_World&apos;s_End">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Movie"/>
+        <untitled-ontology-16:hasGenre rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#Action"/>
+        <untitled-ontology-16:hasSchedule rdf:resource="http://www.semanticweb.org/kiouloueleonor/ontologies/2023/2/untitled-ontology-16#schedule_POTC"/>
+        <untitled-ontology-16:Country>USA</untitled-ontology-16:Country>
+        <untitled-ontology-16:Language>English</untitled-ontology-16:Language>
+        <untitled-ontology-16:Title>Pirates of the Caribbean: At World&apos;s End</untitled-ontology-16:Title>
+        <untitled-ontology-16:Year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2007</untitled-ontology-16:Year>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
